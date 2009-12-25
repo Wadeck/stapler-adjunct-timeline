@@ -8,7 +8,7 @@
     <version>1</version>
   </parent>
   <artifactId>stapler-adjunct-timeline</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0</version>
   <name>Timeline component at http://www.simile-widgets.org/timeline/</name>
 
   <build>
@@ -25,4 +25,10 @@
      </plugin>
     </plugins>
   </build>
+
+  <scm>
+    <connection>scm:svn:https://svn.dev.java.net/svn/stapler/tags/stapler-adjunct-timeline-1.0</connection>
+    <developerConnection>scm:svn:https://svn.dev.java.net/svn/stapler/tags/stapler-adjunct-timeline-1.0</developerConnection>
+    <url>https://stapler.dev.java.net/source/browse/stapler/tags/stapler-adjunct-timeline-1.0</url>
+  </scm>
 </project>
