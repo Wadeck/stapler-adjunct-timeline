@@ -10,4 +10,19 @@
   <artifactId>stapler-adjunct-timeline</artifactId>
   <version>1.0-SNAPSHOT</version>
   <name>Timeline component at http://www.simile-widgets.org/timeline/</name>
+
+  <build>
+    <plugins>
+     <plugin>
+       <artifactId>maven-jar-plugin</artifactId>
+       <executions>
+         <execution>
+           <goals>
+             <goal>test-jar</goal>
+           </goals>
+         </execution>
+       </executions>
+     </plugin>
+    </plugins>
+  </build>
 </project>
