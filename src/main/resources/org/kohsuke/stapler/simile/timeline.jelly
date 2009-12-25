@@ -1,0 +1,11 @@
+<!-- This is the adjunct file to include SIMILE timeline -->
+<j:jelly xmlns:j="jelly:core">
+  <script type="text/javascript">
+    Timeline_urlPrefix   ='${it.packageUrl}/timeline_js/';
+    SimileAjax_urlPrefix = '${it.packageUrl}/timeline_ajax/';
+    Timeline_parameters='bundle=true';
+  </script>
+  <script src="${it.packageUrl}/timeline_ajax/simile-ajax-api.js" type="text/javascript" />
+  <script src="${it.packageUrl}/timeline_ajax/simile-ajax-bundle.js" type="text/javascript" />
+  <script src="${it.packageUrl}/timeline_js/timeline-api.js" type="text/javascript" />
+</j:jelly>
