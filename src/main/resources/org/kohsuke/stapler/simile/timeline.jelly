@@ -1,13 +1,20 @@
 <!-- This is the adjunct file to include SIMILE timeline -->
 <j:jelly xmlns:j="jelly:core">
   <script type="text/javascript">
-    Timeline_urlPrefix   ='${it.packageUrl}/timeline_js/';
-    SimileAjax_urlPrefix = '${it.packageUrl}/timeline_ajax/';
-    Timeline_parameters='bundle=true';
+    var SimileAjax = {
+        Platform: {}
+    };
   </script>
   <!--<script src="${it.packageUrl}/timeline_ajax/simile-ajax-api.js" type="text/javascript" />-->
   <script src="${it.packageUrl}/timeline_ajax/simile-ajax-bundle.js" type="text/javascript" />
   <link rel="stylesheet" type="text/css" href="${it.packageUrl}/timeline_ajax/styles/graphics.css" />
+
+  <script>
+    var Timeline = {};
+    Timeline.DateTime = SimileAjax.DateTime;
+    Timeline.urlPrefix ='${it.packageUrl}/timeline_js/';
+    Timeline.serverLocale = Timeline.clientLocale = "en";
+  </script>
   <!--<script src="${it.packageUrl}/timeline_js/timeline-api.js" type="text/javascript" />-->
   <script src="${it.packageUrl}/timeline_js/timeline-bundle.js" type="text/javascript" />
   <script src="${it.packageUrl}/timeline_js/scripts/l10n/en/labellers.js" type="text/javascript" />
