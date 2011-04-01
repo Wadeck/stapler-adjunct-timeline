@@ -1,6 +1,8 @@
 CHANGES.txt
 
 Version pre 2.4.0
+* Fixed part of JENKINS-6439. The Timeline widget needs a "GMT"-based
+  timezone in the timestamps. -- makr
 
 Version 2.3.0
 * Added test 5, really long labels, to test example page rev 1601, LarryK
