@@ -28,7 +28,10 @@ public class TimelineEventList extends ArrayList<Event> implements HttpResponse 
         JsonConfig config = new JsonConfig();
         config.registerJsonValueProcessor(Date.class,new JsonValueProcessor() {
             public Object processArrayValue(Object value, JsonConfig jsonConfig) {
-                return value==null ? null : SDF.format(value);
+                if (value==null)    return null;
+                synchronized (SDF) {
+                    return SDF.format(value);
+                }
             }
 
             public Object processObjectValue(String key, Object value, JsonConfig jsonConfig) {
