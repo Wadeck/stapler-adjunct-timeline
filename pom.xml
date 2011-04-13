@@ -4,7 +4,6 @@
   <parent>
     <groupId>org.kohsuke.stapler</groupId>
     <artifactId>stapler-adjuncts</artifactId>
-    <relativePath>../pom.xml</relativePath>
     <version>1</version>
   </parent>
   <artifactId>stapler-adjunct-timeline</artifactId>
@@ -39,4 +38,25 @@
       <scope>provided</scope>
     </dependency>
   </dependencies>
+
+  <scm>
+    <connection>scm:git:git://github.com/stapler/stapler-adjunct-timeline.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/stapler/stapler-adjunct-timeline.git</developerConnection>
+    <url>https://github.com/stapler/stapler</url>
+  </scm>
+
+  <distributionManagement>
+    <repository>
+      <id>maven.jenkins-ci.org</id>
+      <url>http://maven.jenkins-ci.org:8081/content/repositories/releases/</url>
+    </repository>
+  </distributionManagement>
+
+  <repositories>
+    <repository>
+      <id>m.g.o-public</id>
+      <url>http://maven.glassfish.org/content/groups/public/</url>
+    </repository>
+  </repositories>
+
 </project>
