@@ -55,4 +55,10 @@
     </repository>
   </repositories>
 
+  <licenses>
+    <license>
+      <name>BSD License</name>
+      <url>http://simile.mit.edu/license.html</url>
+    </license>
+  </licenses>
 </project>
