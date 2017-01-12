@@ -165,8 +165,9 @@ if (typeof SimileAjax == "undefined") {
     };
 
     (function() {
+        // NOTE: These are never actually loaded nor do they even exist in the Stapler world.
         var javascriptFiles = [
-            "jquery-1.2.6.min.js",
+            "jquery-UNUSED.min.js",
             "platform.js",
             "debug.js",
             "xmlhttp.js",
